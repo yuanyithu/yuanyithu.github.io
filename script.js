@@ -1,13 +1,7 @@
 (function () {
   const translations = {
     en: {
-      navAbout: "About",
-      navResearch: "Research",
-      navPublication: "Publication",
-      navCv: "CV",
-      navContact: "Contact",
       brandName: "Yi Yuan",
-      heroEyebrow: "Quantum error correction and its implementation",
       heroName: "Yi Yuan",
       heroRole: "Ph.D. Candidate in Physics, Tsinghua University",
       heroSummary: "I work on quantum error correction and the practical questions that arise when bringing it onto real hardware. My interests sit at the intersection of QEC theory and what actually runs on noisy and early fault-tolerant devices.",
@@ -20,12 +14,10 @@
       highlightEducationLabel: "Education",
       highlightEducation: "Ph.D. in Physics, Tsinghua University, 2023–2028 (expected)",
       highlightUndergraduate: "B.S. in Fundamental Sciences, Mathematics and Physics, Tsinghua University, 2019–2023",
-      researchEyebrow: "Research",
-      researchTitle: "Research",
+      interestTitle: "Interest",
       researchDirection: "My current focus is quantum error correction and the implementation-level problems that stand between QEC theory and working fault-tolerant devices.",
       researchPrevious: "My previous work develops error-mitigation techniques for the noisy and early fault-tolerant regime — combining quantum error-detecting codes with probabilistic error cancellation to reshape the effective noise channel and suppress residual logical errors at reduced sampling cost.",
-      publicationEyebrow: "Publication",
-      publicationTitle: "Publication",
+      workTitle: "Work",
       publicationStatus: "Preprint, 2026",
       publicationBody: "This work develops a QEDC+PEC route for noisy and early fault-tolerant devices, using post-selection and probabilistic error cancellation to reshape noise and suppress residual logical errors.",
       cvEyebrow: "CV",
@@ -33,19 +25,12 @@
       cvBody: "Download the English or Chinese version of my CV as a PDF.",
       cvEnglish: "English CV",
       cvChinese: "中文简历",
-      contactEyebrow: "Contact",
-      contactTitle: "Professional Links",
+      contactTitle: "Contact",
       contactVibe: "I'm also a vibe coder who enjoys exploring the possibilities AI opens up 🙂",
-      footerUpdated: "Last updated"
+      footerUpdated: "Last updated May 30, 2026"
     },
     zh: {
-      navAbout: "关于",
-      navResearch: "研究",
-      navPublication: "论文",
-      navCv: "简历",
-      navContact: "联系",
       brandName: "袁逸",
-      heroEyebrow: "量子纠错及其实现",
       heroName: "袁逸",
       heroRole: "清华大学物理系博士研究生",
       heroSummary: "我的研究方向是量子纠错,以及将纠错理论落实到真实硬件时出现的现实问题。我的兴趣位于量子纠错理论与真正运行在含噪和早期容错设备上的实践之间。",
@@ -58,12 +43,10 @@
       highlightEducationLabel: "教育经历",
       highlightEducation: "清华大学物理系博士研究生，2023–2028（预计）",
       highlightUndergraduate: "清华大学物理系数理基础科学班本科，2019–2023",
-      researchEyebrow: "研究",
-      researchTitle: "研究",
+      interestTitle: "兴趣",
       researchDirection: "我目前关注量子纠错，以及横亘在量子纠错理论和可工作的容错设备之间的实现层问题。",
       researchPrevious: "我之前的工作发展面向含噪和早期容错阶段的误差缓解技术——将量子错误探测码与概率误差抵消结合，重塑有效噪声信道，并以较低采样成本抑制剩余逻辑错误。",
-      publicationEyebrow: "论文",
-      publicationTitle: "论文",
+      workTitle: "工作",
       publicationStatus: "预印本，2026",
       publicationBody: "这项工作面向含噪和早期容错设备，探索通过后选择与概率误差抵消重塑噪声并抑制剩余逻辑错误的 QEDC+PEC 路径。",
       cvEyebrow: "简历",
@@ -71,10 +54,9 @@
       cvBody: "下载英文或中文 PDF 版本简历。",
       cvEnglish: "English CV",
       cvChinese: "中文简历",
-      contactEyebrow: "联系",
-      contactTitle: "专业链接",
+      contactTitle: "联系",
       contactVibe: "我也是一名 vibe coder,喜欢探索 AI 带来的各种可能 🙂",
-      footerUpdated: "最后更新"
+      footerUpdated: "最后更新 2026年5月30日"
     }
   };
 
