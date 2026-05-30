@@ -1,0 +1,120 @@
+% !TEX program = xelatex
+\documentclass[10pt, a4paper]{article}
+
+% ===== Page setup =====
+\usepackage[left=1.0cm, right=1.0cm, top=0.6cm, bottom=0.6cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+% ===== Colors =====
+\definecolor{primary}{RGB}{0, 90, 160}
+\definecolor{darktext}{RGB}{40, 40, 40}
+\definecolor{graytext}{RGB}{100, 100, 100}
+
+% ===== Hyperlinks =====
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    urlcolor=primary,
+    pdfborder={0 0 0}
+}
+
+% ===== No page numbers =====
+\pagestyle{empty}
+
+% ===== Paragraph settings =====
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ===== Section title style =====
+\titleformat{\section}
+    {\large\bfseries\color{primary}}
+    {}
+    {0em}
+    {}
+    [\vspace{-0.6em}\textcolor{primary}{\rule{\textwidth}{0.8pt}}]
+\titlespacing*{\section}{0pt}{0.35em}{0.1em}
+
+% ===== List style =====
+\setlist[itemize]{
+    leftmargin=1.5em,
+    itemsep=0pt,
+    parsep=0pt,
+    topsep=0em,
+    label=\textcolor{primary}{\textbullet}
+}
+
+% ===== Custom commands =====
+% Entry: title | right-side information
+\newcommand{\entry}[2]{%
+    \vspace{0.1em}
+    \noindent\textbf{#1}\hfill{\small\color{graytext}#2}\\[-0.4em]
+}
+
+% Subtitle row
+\newcommand{\entrysub}[2]{%
+    \noindent{\small #1}\hfill{\small\color{graytext}#2}\\[-0.5em]
+}
+
+\begin{document}
+
+% ===== Header: name and contact information =====
+\begin{center}
+    {\LARGE\bfseries Yi Yuan}\\[0.3em]
+    {\small
+        \textbf{Email:} yuanyithu@126.com \quad
+        \textbf{GitHub:} \href{https://github.com/yuanyithu}{github.com/yuanyithu} \\[0.2em]
+        Male\enspace|\enspace Ph.D. Candidate in Physics, Tsinghua University
+    }
+\end{center}
+
+% ===== Education =====
+\section{Education}
+
+\entry{Tsinghua University \enspace Ph.D. in Physics}{2023.08 -- 2028.06 (Expected)}
+\entrysub{Department of Physics \enspace Ranked \textbf{1st} in Modern Physics in the Ph.D. Qualifying Exam \enspace Principles and Architecture of Quantum Computers (A+)}{Beijing}
+
+\entry{Tsinghua University \enspace B.S. in Fundamental Sciences, Mathematics and Physics}{2019.08 -- 2023.06}
+\entrysub{Department of Physics \enspace GPA: 3.89/4.0 (Rank: 18/116) \enspace Outstanding Graduate \enspace Nominee, Ye Qisun Award}{Beijing}
+
+% ===== Skills =====
+\section{Technical Skills}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Python (primary language for daily research and development)
+    \item \textbf{AI/ML:} Familiar with Transformer architectures and RLHF workflows (PPO/GRPO); experienced with JAX and PyTorch; hands-on experience in CNN modeling and LLM API application development
+    \item \textbf{Data and Computing:} NumPy vectorized computing, multiprocessing, data-driven modeling, and backtesting system development
+    \item \textbf{Tools:} Git, Linux servers \quad \textbf{Language:} English -- proficient in reading and writing scientific literature
+\end{itemize}
+
+% ===== Publications =====
+\section{Publications}
+\noindent{\small \textbf{Yi Yuan}, Yuanchen Zhao, and Dong E. Liu. ``Zeno-Enhanced Probabilistic Error Cancellation with Quantum Error Detection Codes.'' \textit{arXiv preprint arXiv:2605.12149}, 2026. \href{https://arxiv.org/abs/2605.12149}{arXiv}}\\[-0.2em]
+\noindent{\small Developed a perturbative QEDC+PEC protocol for near-term noisy quantum devices, using post-selection to reshape the effective noise channel and PEC to cancel residual logical errors.}
+
+% ===== Research and projects =====
+\section{Research and Projects}
+
+\entry{Research in Quantum Computing and Quantum Information}{2022.09 -- Present}
+\entrysub{Department of Physics, Tsinghua University}{Python, JAX, Tensor Network}
+\begin{itemize}
+    \item \textbf{Zeno-enhanced QEDC+PEC protocol} (2024 -- 2026, arXiv preprint): Combined quantum error-detecting codes with probabilistic error cancellation for near-term noisy quantum devices; in 200-qubit Iceberg-code logical GHZ preparation, reduced sampling overhead by \textbf{3--4 orders of magnitude} relative to standard PEC while maintaining $F\simeq0.956$
+    \item \textbf{Classical Shadow error mitigation} (2024): Used tensor network methods to compute the error-mitigation complexity of classical shadows on noisy quantum circuits with $\log(n)$ depth, and analyzed its scaling with system size
+    \item \textbf{Undergraduate thesis: complexity of quantum annealing} (2022.09 -- 2023.06): Based on the imaginary-time spacetime instanton action, explained why quantum annealing and classical QMC have matching complexity in ground-state energy search for double-well potentials, and identified the possibility of multi-path quantum speedup
+\end{itemize}
+
+\entry{Selected Projects}{}
+\begin{itemize}
+    \item \textbf{SEVI particle scattering analysis}: Built a PyTorch-based CNN to fit scattering-amplitude parameters, reaching the accuracy of analytical methods without injecting prior knowledge
+    \item \textbf{LLM paper summarization tool} (2025): Automatically fetched daily arXiv papers, generated summaries through the Kimi API, and completed local deployment
+\end{itemize}
+
+% ===== Honors and leadership =====
+\section{Honors and Leadership}
+\noindent{\small Honors: 2021 Tsinghua Alumni -- Zhang Mingwei Scholarship \quad Multiple Department of Physics scholarships for academic excellence, innovation, and overall achievement in 2020--2021}\\[-0.2em]
+\noindent{\small Leadership: 2023.08--2025.01 Student Counselor, Department of Physics, Tsinghua University \quad 2019--2020 Youth League Branch Secretary (branch rated ``Class A'') \quad 2024--2025 Outstanding Student Leader}
+
+\end{document}
