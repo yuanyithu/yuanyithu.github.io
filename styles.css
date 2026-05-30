@@ -586,7 +586,7 @@ h3 {
 
 @media (max-width: 700px) {
   :root {
-    --header-height: 104px;
+    --header-height: 132px;
   }
 
   .nav,
@@ -602,6 +602,11 @@ h3 {
   .text-toggle {
     min-width: 84px;
     padding: 0 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    overflow-x: visible;
   }
 
   .section {
@@ -661,12 +666,16 @@ h3 {
 }
 
 @media (max-width: 430px) {
+  :root {
+    --header-height: 148px;
+  }
+
   .brand {
     font-size: 0.94rem;
   }
 
   .nav-links a {
-    padding: 10px 8px;
+    padding: 9px 8px;
     font-size: 0.86rem;
   }
 
