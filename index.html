@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yi Yuan | Physics Ph.D. Candidate</title>
-  <meta name="description" content="Yi Yuan is a Physics Ph.D. candidate at Tsinghua University working on quantum computing, quantum information, error mitigation, and technical research tools.">
+  <meta name="description" content="Yi Yuan is a Physics Ph.D. candidate at Tsinghua University working on quantum error correction, quantum information, fault-tolerant quantum computing, and quantum error mitigation.">
   <meta property="og:title" content="Yi Yuan | Physics Ph.D. Candidate">
-  <meta property="og:description" content="Physics Ph.D. candidate at Tsinghua University researching quantum computing, quantum information, and near-term noisy quantum devices.">
+  <meta property="og:description" content="Physics Ph.D. candidate at Tsinghua University working on quantum error correction, quantum information, fault-tolerant quantum computing, and quantum error mitigation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://yuanyithu.github.io/">
   <meta name="theme-color" content="#f5f7f7">
@@ -19,8 +19,7 @@
       <div class="nav-links" aria-label="Section navigation">
         <a href="#about" data-i18n="navAbout">About</a>
         <a href="#research" data-i18n="navResearch">Research</a>
-        <a href="#publications" data-i18n="navPublications">Publications</a>
-        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#publication" data-i18n="navPublication">Publication</a>
         <a href="#cv" data-i18n="navCv">CV</a>
         <a href="#contact" data-i18n="navContact">Contact</a>
       </div>
@@ -33,136 +32,71 @@
     </nav>
   </header>
 
-  <main id="top">
+  <main id="top" class="page-shell">
+    <div class="primary-column">
     <section class="hero section" id="about" aria-labelledby="hero-title">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow" data-i18n="heroEyebrow">Quantum computing and quantum information</p>
-          <h1 id="hero-title" data-i18n="heroName">Yi Yuan</h1>
-          <p class="hero-role" data-i18n="heroRole">Ph.D. Candidate in Physics, Tsinghua University</p>
-          <p class="hero-summary" data-i18n="heroSummary">My work focuses on fault-tolerant computing problems for near-fault-tolerant quantum computing, including QEC, QEM, and connections to engineering practice. I enjoy theoretical questions and also care about implementation.</p>
-          <div class="hero-tags" aria-label="Research keywords">
-            <span data-i18n="tagQuantumComputing">Quantum Computing</span>
-            <span data-i18n="tagQuantumInformation">Quantum Information</span>
-            <span data-i18n="tagQec">Error Detection</span>
-            <span data-i18n="tagMitigation">Error Mitigation</span>
-          </div>
-          <div class="hero-actions">
-            <a class="button primary" href="#publications" data-i18n="viewPublication">View Publication</a>
-            <a class="button secondary" href="#cv" data-i18n="downloadCv">Download CV</a>
-          </div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">Quantum error correction and its implementation</p>
+        <h1 id="hero-title" data-i18n="heroName">Yi Yuan</h1>
+        <p class="hero-role" data-i18n="heroRole">Ph.D. Candidate in Physics, Tsinghua University</p>
+        <p class="hero-summary" data-i18n="heroSummary">I work on quantum error correction and the practical questions that arise when bringing it onto real hardware. My interests sit at the intersection of QEC theory and what actually runs on noisy and early fault-tolerant devices.</p>
+        <div class="hero-tags" aria-label="Research keywords">
+          <span data-i18n="tagQec">Quantum Error Correction</span>
+          <span data-i18n="tagQuantumInformation">Quantum Information</span>
+          <span data-i18n="tagFaultTolerant">Fault-Tolerant Quantum Computing</span>
+          <span data-i18n="tagQem">Quantum Error Mitigation</span>
         </div>
-        <aside class="hero-panel" aria-label="Profile highlights">
-          <dl>
-            <div>
-              <dt data-i18n="highlightAffiliationLabel">Affiliation</dt>
-              <dd data-i18n="highlightAffiliation">Department of Physics, Tsinghua University</dd>
-            </div>
-            <div>
-              <dt data-i18n="highlightEducationLabel">Program</dt>
-              <dd data-i18n="highlightEducation">Ph.D. in Physics, 2023-2028 expected</dd>
-            </div>
-          </dl>
-        </aside>
+        <div class="hero-actions">
+          <a class="button primary" href="#publication" data-i18n="viewPublication">Publication</a>
+          <a class="button secondary" href="#cv" data-i18n="downloadCv">Download CV</a>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="research" aria-labelledby="research-title">
+    <section class="section research-section" id="research" aria-labelledby="research-title">
       <div class="section-heading">
         <p class="eyebrow" data-i18n="researchEyebrow">Research</p>
-        <h2 id="research-title" data-i18n="researchTitle">Research Focus</h2>
+        <h2 id="research-title" data-i18n="researchTitle">Research</h2>
       </div>
-      <div class="feature-grid">
-        <article class="feature-card">
-          <h3 data-i18n="focusQuantumTitle">Quantum error mitigation</h3>
-          <p data-i18n="focusQuantumBody">Developing probabilistic error cancellation protocols that combine post-selection and quantum error-detecting codes to reduce sampling overhead on noisy devices.</p>
-        </article>
-        <article class="feature-card">
-          <h3 data-i18n="focusShadowTitle">Classical shadows</h3>
-          <p data-i18n="focusShadowBody">Using tensor-network methods to analyze the error-mitigation complexity of classical shadows in noisy logarithmic-depth quantum circuits.</p>
-        </article>
-        <article class="feature-card">
-          <h3 data-i18n="focusAnnealingTitle">Quantum annealing</h3>
-          <p data-i18n="focusAnnealingBody">Studying complexity mechanisms in quantum annealing and classical QMC through imaginary-time spacetime instanton action.</p>
-        </article>
+      <div class="research-copy">
+        <p data-i18n="researchDirection">My current focus is quantum error correction and the implementation-level problems that stand between QEC theory and working fault-tolerant devices.</p>
+        <p data-i18n="researchPublished">My published work so far develops error-mitigation techniques for the noisy and early fault-tolerant regime — combining quantum error-detecting codes with probabilistic error cancellation to reshape the effective noise channel and suppress residual logical errors at reduced sampling cost.</p>
       </div>
     </section>
+    </div>
 
-    <section class="section" id="publications" aria-labelledby="publications-title">
+    <div class="secondary-column">
+    <aside class="hero-panel profile-panel" aria-label="Profile highlights">
+      <dl>
+        <div>
+          <dt data-i18n="highlightAffiliationLabel">Affiliation</dt>
+          <dd data-i18n="highlightAffiliation">Department of Physics, Tsinghua University</dd>
+        </div>
+        <div>
+          <dt data-i18n="highlightEducationLabel">Program</dt>
+          <dd data-i18n="highlightEducation">Ph.D. in Physics, 2023–2028 (expected)</dd>
+        </div>
+      </dl>
+    </aside>
+
+    <section class="section publication-section" id="publication" aria-labelledby="publication-title">
       <div class="section-heading">
-        <p class="eyebrow" data-i18n="publicationsEyebrow">Publication</p>
-        <h2 id="publications-title" data-i18n="publicationsTitle">Selected Publication</h2>
+        <p class="eyebrow" data-i18n="publicationEyebrow">Publication</p>
+        <h2 id="publication-title" data-i18n="publicationTitle">Publication</h2>
       </div>
       <article class="publication-item">
-        <p class="publication-year">2026</p>
         <div>
           <h3>Zeno-Enhanced Probabilistic Error Cancellation with Quantum Error Detection Codes</h3>
           <p class="authors"><strong>Yi Yuan</strong>, Yuanchen Zhao, and Dong E. Liu</p>
-          <p data-i18n="publicationBody">A perturbative QEDC+PEC protocol for near-term noisy quantum devices, using post-selection to reshape the effective noise channel and probabilistic error cancellation to cancel residual logical errors.</p>
+          <p class="publication-status" data-i18n="publicationStatus">Preprint, 2026</p>
+          <!-- update status here if/when confirmed -->
+          <p data-i18n="publicationBody">This work develops a QEDC+PEC route for noisy and early fault-tolerant devices, using post-selection and probabilistic error cancellation to reshape noise and suppress residual logical errors.</p>
           <a class="inline-link" href="https://arxiv.org/abs/2605.12149" rel="noopener" target="_blank">arXiv:2605.12149</a>
         </div>
       </article>
     </section>
 
-    <section class="section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="projectsEyebrow">Projects</p>
-        <h2 id="projects-title" data-i18n="projectsTitle">Technical Projects</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item">
-          <div class="timeline-meta">2024-2026</div>
-          <div>
-            <h3 data-i18n="projectZenoTitle">Zeno-enhanced QEDC+PEC protocol</h3>
-            <p data-i18n="projectZenoBody">Combined quantum error-detecting codes with probabilistic error cancellation; in 200-qubit Iceberg-code logical GHZ preparation, reduced sampling overhead by 3-4 orders of magnitude relative to standard PEC while maintaining F ~= 0.956.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-meta">2024</div>
-          <div>
-            <h3 data-i18n="projectShadowTitle">Classical Shadow error mitigation</h3>
-            <p data-i18n="projectShadowBody">Computed and analyzed the error-mitigation complexity of classical shadows on noisy quantum circuits using tensor-network methods.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-meta">2025</div>
-          <div>
-            <h3 data-i18n="projectLlmTitle">LLM paper summarization tool</h3>
-            <p data-i18n="projectLlmBody">Built a local tool that fetches daily arXiv papers and generates structured summaries through the Kimi API.</p>
-          </div>
-        </article>
-        <article class="timeline-item">
-          <div class="timeline-meta" data-i18n="projectSeviMeta">Selected</div>
-          <div>
-            <h3 data-i18n="projectSeviTitle">SEVI particle scattering analysis</h3>
-            <p data-i18n="projectSeviBody">Built a PyTorch-based CNN to fit scattering-amplitude parameters, reaching analytical-method accuracy without injecting prior knowledge.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section two-column" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="skillsEyebrow">Skills</p>
-        <h2 id="skills-title" data-i18n="skillsTitle">Technical Skills</h2>
-      </div>
-      <div class="skill-groups">
-        <div>
-          <h3 data-i18n="skillProgrammingTitle">Programming</h3>
-          <p>Python, NumPy, multiprocessing, data-driven modeling</p>
-        </div>
-        <div>
-          <h3 data-i18n="skillMlTitle">AI and ML</h3>
-          <p>JAX, PyTorch, CNN modeling, Transformer architectures</p>
-        </div>
-        <div>
-          <h3 data-i18n="skillToolsTitle">Tools</h3>
-          <p>Git, Linux servers, backtesting systems, scientific literature reading and writing</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cv" aria-labelledby="cv-title">
+    <section class="section cv-section" id="cv" aria-labelledby="cv-title">
       <div class="cv-band">
         <div>
           <p class="eyebrow" data-i18n="cvEyebrow">CV</p>
@@ -170,20 +104,9 @@
           <p data-i18n="cvBody">Download the English or Chinese version of my CV as a PDF.</p>
         </div>
         <div class="cv-actions">
-          <a class="button primary" href="cv-en.pdf" data-i18n="cvEnglish">English CV</a>
-          <a class="button secondary" href="cv-zh.pdf" data-i18n="cvChinese">中文简历</a>
+          <a class="button primary" href="https://yuanyithu.github.io/cv-en.pdf" data-i18n="cvEnglish">English CV</a>
+          <a class="button secondary" href="https://yuanyithu.github.io/cv-zh.pdf" data-i18n="cvChinese">中文简历</a>
         </div>
-      </div>
-    </section>
-
-    <section class="section" id="honors" aria-labelledby="honors-title">
-      <div class="section-heading">
-        <p class="eyebrow" data-i18n="honorsEyebrow">Experience</p>
-        <h2 id="honors-title" data-i18n="honorsTitle">Honors and Leadership</h2>
-      </div>
-      <div class="compact-list">
-        <p data-i18n="honorsBody">Tsinghua Alumni - Zhang Mingwei Scholarship; multiple Department of Physics scholarships for academic excellence, innovation, and overall achievement; Outstanding Student Leader.</p>
-        <p data-i18n="leadershipBody">Student Counselor, Department of Physics, Tsinghua University.</p>
       </div>
     </section>
 
@@ -193,11 +116,14 @@
         <h2 id="contact-title" data-i18n="contactTitle">Professional Links</h2>
       </div>
       <div class="contact-links">
-        <a href="mailto:yuanyithu@126.com">yuanyithu@126.com</a>
+        <a href="mailto:yuany23@mails.tsinghua.edu.cn">yuany23@mails.tsinghua.edu.cn</a>
         <a href="https://github.com/yuanyithu" rel="noopener" target="_blank">GitHub</a>
         <a href="https://arxiv.org/abs/2605.12149" rel="noopener" target="_blank">arXiv</a>
+        <!-- add Google Scholar / ORCID when available -->
       </div>
+      <p class="contact-note" data-i18n="contactVibe">I'm also a vibe coder who enjoys exploring the possibilities AI opens up 🙂</p>
     </section>
+    </div>
   </main>
 
   <footer class="site-footer">
