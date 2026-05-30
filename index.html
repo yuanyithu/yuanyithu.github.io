@@ -33,7 +33,6 @@
   </header>
 
   <main id="top" class="page-shell">
-    <div class="primary-column">
     <section class="hero section" id="about" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow" data-i18n="heroEyebrow">Quantum error correction and its implementation</p>
@@ -46,10 +45,18 @@
           <span data-i18n="tagFaultTolerant">Fault-Tolerant Quantum Computing</span>
           <span data-i18n="tagQem">Quantum Error Mitigation</span>
         </div>
-        <div class="hero-actions">
-          <a class="button primary" href="#publication" data-i18n="viewPublication">Publication</a>
-          <a class="button secondary" href="#cv" data-i18n="downloadCv">Download CV</a>
-        </div>
+      </div>
+    </section>
+
+    <section class="section facts-section" aria-label="Profile details">
+      <div class="fact-item">
+        <p class="eyebrow" data-i18n="highlightAffiliationLabel">Affiliation</p>
+        <p data-i18n="highlightAffiliation">Department of Physics, Tsinghua University</p>
+      </div>
+      <div class="fact-item">
+        <p class="eyebrow" data-i18n="highlightEducationLabel">Education</p>
+        <p data-i18n="highlightEducation">Ph.D. in Physics, Tsinghua University, 2023–2028 (expected)</p>
+        <p data-i18n="highlightUndergraduate">B.S. in Fundamental Sciences, Mathematics and Physics, Tsinghua University, 2019–2023</p>
       </div>
     </section>
 
@@ -60,24 +67,9 @@
       </div>
       <div class="research-copy">
         <p data-i18n="researchDirection">My current focus is quantum error correction and the implementation-level problems that stand between QEC theory and working fault-tolerant devices.</p>
-        <p data-i18n="researchPublished">My published work so far develops error-mitigation techniques for the noisy and early fault-tolerant regime — combining quantum error-detecting codes with probabilistic error cancellation to reshape the effective noise channel and suppress residual logical errors at reduced sampling cost.</p>
+        <p data-i18n="researchPrevious">My previous work develops error-mitigation techniques for the noisy and early fault-tolerant regime — combining quantum error-detecting codes with probabilistic error cancellation to reshape the effective noise channel and suppress residual logical errors at reduced sampling cost.</p>
       </div>
     </section>
-    </div>
-
-    <div class="secondary-column">
-    <aside class="hero-panel profile-panel" aria-label="Profile highlights">
-      <dl>
-        <div>
-          <dt data-i18n="highlightAffiliationLabel">Affiliation</dt>
-          <dd data-i18n="highlightAffiliation">Department of Physics, Tsinghua University</dd>
-        </div>
-        <div>
-          <dt data-i18n="highlightEducationLabel">Program</dt>
-          <dd data-i18n="highlightEducation">Ph.D. in Physics, 2023–2028 (expected)</dd>
-        </div>
-      </dl>
-    </aside>
 
     <section class="section publication-section" id="publication" aria-labelledby="publication-title">
       <div class="section-heading">
@@ -96,20 +88,6 @@
       </article>
     </section>
 
-    <section class="section cv-section" id="cv" aria-labelledby="cv-title">
-      <div class="cv-band">
-        <div>
-          <p class="eyebrow" data-i18n="cvEyebrow">CV</p>
-          <h2 id="cv-title" data-i18n="cvTitle">Curriculum Vitae</h2>
-          <p data-i18n="cvBody">Download the English or Chinese version of my CV as a PDF.</p>
-        </div>
-        <div class="cv-actions">
-          <a class="button primary" href="https://yuanyithu.github.io/cv-en.pdf" data-i18n="cvEnglish">English CV</a>
-          <a class="button secondary" href="https://yuanyithu.github.io/cv-zh.pdf" data-i18n="cvChinese">中文简历</a>
-        </div>
-      </div>
-    </section>
-
     <section class="section contact-section" id="contact" aria-labelledby="contact-title">
       <div class="section-heading">
         <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
@@ -123,7 +101,15 @@
       </div>
       <p class="contact-note" data-i18n="contactVibe">I'm also a vibe coder who enjoys exploring the possibilities AI opens up 🙂</p>
     </section>
-    </div>
+
+    <section class="section cv-section" id="cv" aria-labelledby="cv-title">
+      <p class="eyebrow" data-i18n="cvEyebrow">CV</p>
+      <h2 id="cv-title" class="sr-only" data-i18n="cvTitle">Curriculum Vitae</h2>
+      <div class="cv-actions">
+        <a class="button primary" href="https://yuanyithu.github.io/cv-en.pdf" data-i18n="cvEnglish">English CV</a>
+        <a class="button secondary" href="https://yuanyithu.github.io/cv-zh.pdf" data-i18n="cvChinese">中文简历</a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">

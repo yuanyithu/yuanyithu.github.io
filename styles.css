@@ -12,7 +12,7 @@
   --accent-soft: #e2f0ee;
   --link: #0a6269;
   --shadow: 0 18px 50px rgba(32, 36, 38, 0.08);
-  --max-width: 1120px;
+  --max-width: 1200px;
   --content-width: 760px;
   --header-height: 76px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -64,7 +64,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-size: 16px;
-  line-height: 1.55;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
 
@@ -185,22 +185,15 @@ button {
 .page-shell {
   width: min(var(--max-width), calc(100% - 40px));
   margin: 0 auto;
-  padding: clamp(18px, 2.4vh, 28px) 0 18px;
+  padding: clamp(16px, 2.2vh, 24px) 0 14px;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  grid-template-areas:
+    "hero facts"
+    "research publication"
+    "contact cv";
   align-items: start;
-  gap: 38px;
-}
-
-.primary-column,
-.secondary-column {
-  display: grid;
-  gap: 18px;
-}
-
-.secondary-column {
-  grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
-  gap: 18px 14px;
+  gap: 16px 36px;
 }
 
 .section {
@@ -210,6 +203,7 @@ button {
 }
 
 .hero {
+  grid-area: hero;
   min-height: auto;
   display: block;
 }
@@ -254,13 +248,13 @@ h3 {
 
 h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.7rem, 6.2vw, 4.8rem);
+  font-size: clamp(3.5rem, 5.8vw, 4.45rem);
   font-weight: 520;
 }
 
 h2 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.72rem;
+  font-size: 1.62rem;
   font-weight: 520;
 }
 
@@ -278,7 +272,7 @@ h3 {
 
 .hero-summary {
   max-width: 690px;
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
   font-size: 0.98rem;
 }
@@ -287,7 +281,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .hero-tags span {
@@ -303,7 +297,6 @@ h3 {
   font-weight: 620;
 }
 
-.hero-actions,
 .cv-actions {
   display: flex;
   flex-wrap: wrap;
@@ -337,56 +330,53 @@ h3 {
   color: var(--text);
 }
 
-.hero-panel {
-  align-self: start;
-  display: flex;
-  align-items: center;
-  padding: 16px 20px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
+.section-heading {
+  max-width: var(--content-width);
+  margin-bottom: 10px;
 }
 
-.hero-panel dl {
-  width: 100%;
+.facts-section {
+  grid-area: facts;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+}
+
+.fact-item {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+
+.fact-item p {
   margin: 0;
 }
 
-.hero-panel div {
-  padding: 11px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.hero-panel div:first-child {
-  padding-top: 0;
-}
-
-.hero-panel div:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-
-.hero-panel dt {
-  margin: 0 0 5px;
-  color: var(--subtle);
-  font-size: 0.74rem;
-  font-weight: 780;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.hero-panel dd {
-  margin: 0;
+.fact-item p:not(.eyebrow) {
   color: var(--text);
-  font-size: 0.98rem;
   font-weight: 650;
   line-height: 1.45;
 }
 
-.section-heading {
-  max-width: var(--content-width);
-  margin-bottom: 10px;
+.fact-item p + p:not(.eyebrow) {
+  margin-top: 8px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.research-section {
+  grid-area: research;
+}
+
+.publication-section {
+  grid-area: publication;
+}
+
+.contact-section {
+  grid-area: contact;
+}
+
+.cv-section {
+  grid-area: cv;
 }
 
 .feature-grid {
@@ -408,8 +398,7 @@ h3 {
 .timeline-item p,
 .skill-groups p,
 .compact-list p,
-.contact-note,
-.cv-band p {
+.contact-note {
   margin: 10px 0 0;
   color: var(--muted);
 }
@@ -489,33 +478,6 @@ h3 {
   border-bottom: 0;
 }
 
-.cv-band {
-  display: block;
-  padding: 14px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  background: transparent;
-  box-shadow: none;
-  clip-path: none;
-}
-
-.cv-band h2 {
-  font-size: 1.48rem;
-}
-
-.cv-actions {
-  gap: 8px;
-  justify-content: flex-start;
-  margin-top: 12px;
-}
-
-.cv-actions .button {
-  min-width: 0;
-  flex: 1 1 110px;
-  padding: 8px 10px;
-  font-size: 0.86rem;
-}
-
 .compact-list {
   max-width: var(--content-width);
   border-top: 1px solid var(--border);
@@ -568,10 +530,47 @@ h3 {
   font-size: 1.48rem;
 }
 
+.cv-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border-top: 1px solid var(--border);
+  padding-top: 14px;
+}
+
+.cv-section .eyebrow {
+  margin: 0;
+}
+
+.cv-actions {
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 0;
+}
+
+.cv-actions .button {
+  min-width: 124px;
+  padding: 8px 12px;
+  font-size: 0.88rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .site-footer {
   width: min(var(--max-width), calc(100% - 40px));
   margin: 0 auto;
-  padding: 16px 0 24px;
+  padding: 12px 0 18px;
   border-top: 1px solid var(--border);
   color: var(--subtle);
   font-size: 0.88rem;
@@ -593,36 +592,19 @@ h3 {
 
   .page-shell {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "hero"
+      "facts"
+      "research"
+      "publication"
+      "contact"
+      "cv";
     gap: 28px;
   }
 
-  .primary-column,
-  .secondary-column {
-    display: contents;
-  }
-
-  .hero {
-    order: 1;
-  }
-
-  .profile-panel {
-    order: 2;
-  }
-
-  .research-section {
-    order: 3;
-  }
-
-  .publication-section {
-    order: 4;
-  }
-
-  .cv-section {
-    order: 5;
-  }
-
-  .contact-section {
-    order: 6;
+  .facts-section {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .nav {
@@ -709,8 +691,7 @@ h3 {
   }
 
   .publication-item,
-  .timeline-item,
-  .cv-band {
+  .timeline-item {
     grid-template-columns: 1fr;
     gap: 12px;
   }
@@ -723,14 +704,6 @@ h3 {
   .timeline-meta,
   .publication-year {
     font-size: 0.8rem;
-  }
-
-  .cv-band {
-    padding: 28px 0;
-  }
-
-  .cv-band h2 {
-    font-size: 2.15rem;
   }
 
   .cv-actions {
