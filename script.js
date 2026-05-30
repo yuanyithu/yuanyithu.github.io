@@ -7,9 +7,11 @@
       navProjects: "Projects",
       navCv: "CV",
       navContact: "Contact",
+      brandName: "Yi Yuan",
       heroEyebrow: "Quantum computing and quantum information",
+      heroName: "Yi Yuan",
       heroRole: "Ph.D. Candidate in Physics, Tsinghua University",
-      heroSummary: "I study quantum error mitigation and quantum error detection for near-term noisy quantum devices, with a focus on making theoretical protocols computationally testable and useful for realistic systems.",
+      heroSummary: "My work focuses on fault-tolerant computing problems for near-fault-tolerant quantum computing, including QEC, QEM, and connections to engineering practice. I enjoy theoretical questions and also care about implementation.",
       tagQuantumComputing: "Quantum Computing",
       tagQuantumInformation: "Quantum Information",
       tagQec: "Error Detection",
@@ -20,8 +22,6 @@
       highlightAffiliation: "Department of Physics, Tsinghua University",
       highlightEducationLabel: "Program",
       highlightEducation: "Ph.D. in Physics, 2023-2028 expected",
-      highlightExamLabel: "Qualifying Exam",
-      highlightExam: "Ranked 1st in Modern Physics",
       researchEyebrow: "Research",
       researchTitle: "Research Focus",
       focusQuantumTitle: "Quantum error mitigation",
@@ -57,7 +57,7 @@
       honorsEyebrow: "Experience",
       honorsTitle: "Honors and Leadership",
       honorsBody: "Tsinghua Alumni - Zhang Mingwei Scholarship; multiple Department of Physics scholarships for academic excellence, innovation, and overall achievement; Outstanding Student Leader.",
-      leadershipBody: "Student Counselor, Department of Physics, Tsinghua University; Youth League Branch Secretary for a Class A branch.",
+      leadershipBody: "Student Counselor, Department of Physics, Tsinghua University.",
       contactEyebrow: "Contact",
       contactTitle: "Professional Links",
       footerUpdated: "Last updated"
@@ -69,9 +69,11 @@
       navProjects: "项目",
       navCv: "简历",
       navContact: "联系",
+      brandName: "袁逸",
       heroEyebrow: "量子计算与量子信息",
+      heroName: "袁逸",
       heroRole: "清华大学物理系博士研究生",
-      heroSummary: "我的研究方向是面向近期含噪量子设备的量子误差缓解与量子错误探测，重点关注如何将理论协议转化为可计算、可验证并适用于实际系统的方案。",
+      heroSummary: "我的研究方向是near fault tolerant quantum computing的容错计算问题，包括QEC、QEM，以及与工程实际问题的结合。我喜欢理论问题，也关心工程实现",
       tagQuantumComputing: "量子计算",
       tagQuantumInformation: "量子信息",
       tagQec: "错误探测",
@@ -82,8 +84,6 @@
       highlightAffiliation: "清华大学物理系",
       highlightEducationLabel: "培养阶段",
       highlightEducation: "物理学博士，预计 2028 年毕业",
-      highlightExamLabel: "资格考试",
-      highlightExam: "现代物理方向排名第 1",
       researchEyebrow: "研究",
       researchTitle: "研究方向",
       focusQuantumTitle: "量子误差缓解",
@@ -119,7 +119,7 @@
       honorsEyebrow: "经历",
       honorsTitle: "荣誉与工作经历",
       honorsBody: "清华大学校友 - 张明为奖学金；多次获得物理系学业优秀、创新创业和综合优秀奖学金；优秀学生干部。",
-      leadershipBody: "清华大学物理系学生辅导员；曾任团支部书记，所在支部获评甲级团支部。",
+      leadershipBody: "清华大学物理系学生辅导员。",
       contactEyebrow: "联系",
       contactTitle: "专业链接",
       footerUpdated: "最后更新"
@@ -162,7 +162,12 @@
     });
 
     root.lang = language === "zh" ? "zh-CN" : "en";
+    document.title = language === "zh" ? "袁逸 | 清华大学物理系博士研究生" : "Yi Yuan | Physics Ph.D. Candidate";
     root.setAttribute("data-language", language);
+    document.querySelector(".brand").setAttribute(
+      "aria-label",
+      language === "zh" ? "袁逸主页" : "Yi Yuan home"
+    );
     languageButton.setAttribute(
       "aria-label",
       language === "zh" ? "Switch language to English" : "切换到中文"
