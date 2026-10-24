@@ -18,7 +18,10 @@
       researchDirection: "My current focus is quantum error correction and the implementation-level problems that stand between QEC theory and working fault-tolerant devices.",
       researchPrevious: "My previous work develops error-mitigation techniques for the noisy and early fault-tolerant regime — combining quantum error-detecting codes with probabilistic error cancellation to reshape the effective noise channel and suppress residual logical errors at reduced sampling cost.",
       workTitle: "Work",
-      publicationStatus: "Preprint, 2026",
+      publicationSingleShotStatus: "Preprint, 2026",
+      publicationSingleShotBody: "This work establishes a rigorous threshold theorem for single-shot state preparation and connects it to a statistical mechanical mapping.",
+      equalContribution: "* Equal contribution",
+      publicationStatus: "Accepted in Quantum Science and Technology, 2026",
       publicationBody: "This work develops a QEDC+PEC route for noisy and early fault-tolerant devices, using post-selection and probabilistic error cancellation to reshape noise and suppress residual logical errors.",
       cvEyebrow: "CV",
       cvTitle: "Curriculum Vitae",
@@ -27,7 +30,7 @@
       cvChinese: "中文简历",
       contactTitle: "Contact",
       contactVibe: "I'm also a vibe coder who enjoys exploring the possibilities AI opens up 🙂",
-      footerUpdated: "Last updated May 30, 2026"
+      footerUpdated: "Last updated October 24, 2026"
     },
     zh: {
       brandName: "袁逸",
@@ -47,7 +50,10 @@
       researchDirection: "我目前关注量子纠错，以及横亘在量子纠错理论和可工作的容错设备之间的实现层问题。",
       researchPrevious: "我之前的工作发展面向含噪和早期容错阶段的误差缓解技术——将量子错误探测码与概率误差抵消结合，重塑有效噪声信道，并以较低采样成本抑制剩余逻辑错误。",
       workTitle: "工作",
-      publicationStatus: "预印本，2026",
+      publicationSingleShotStatus: "预印本，2026",
+      publicationSingleShotBody: "这项工作为单次（single-shot）态制备的阈值建立了严格定理，并给出其到统计力学模型的映射。",
+      equalContribution: "* 共同第一作者",
+      publicationStatus: "已被 Quantum Science and Technology 接收，2026",
       publicationBody: "这项工作面向含噪和早期容错设备，探索通过后选择与概率误差抵消重塑噪声并抑制剩余逻辑错误的 QEDC+PEC 路径。",
       cvEyebrow: "简历",
       cvTitle: "个人简历",
@@ -56,7 +62,7 @@
       cvChinese: "中文简历",
       contactTitle: "联系",
       contactVibe: "我也是一名 vibe coder,喜欢探索 AI 带来的各种可能 🙂",
-      footerUpdated: "最后更新 2026年5月30日"
+      footerUpdated: "最后更新 2026年10月24日"
     }
   };
 
