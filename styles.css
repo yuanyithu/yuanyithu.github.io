@@ -400,6 +400,14 @@ h3 {
   border-bottom: 1px solid var(--border);
 }
 
+.publication-item + .publication-item {
+  border-top: 0;
+}
+
+.publication-note {
+  font-size: 0.85rem;
+}
+
 .publication-year,
 .publication-status,
 .timeline-meta {
